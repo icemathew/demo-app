@@ -1,0 +1,24 @@
+$pixels:250;
+$percent:100;
+
+@mixin padding {
+    @for $i from 0 through $pixels {
+        .padding-#{$i} { padding: #{$i}px; }
+    }
+}
+
+@mixin margin {
+    @for $i from 0 through $pixels {
+        .margin-#{$i} { margin: #{$i}px; }
+    }
+}
+
+@mixin width {
+    @for $i from 0 through $percent {
+        .width-#{$i} { width: #{$i}+'%'; }
+    }
+}
+
+@include margin;
+@include padding;
+@include width;

@@ -1,0 +1,31 @@
+{
+	"login": {
+		"button": "LOGIN",
+		"user.required": "El usuario es obligatorio",
+		"pass.required": "El password es obligatorio",
+		"error": "Las credenciales proporcionadas son incorrectas"
+	},
+	"home": {
+		"menu": {
+			"user.settings": "Configuración",
+			"new.report": "Informar de siniestro",
+			"check.reports": "Revisar siniestros",
+			"logout": "Logout"
+		},
+		"welcome": "Bienvenido {{ userName }} "
+	},
+	"insurance": {
+		"create": "Crear parte",
+		"company": "Compañía aseguradora",
+		"brand": "Marca",
+		"model": "Modelo",
+		"plate": "Matrícula",
+		"user": "Usuario",
+		"date": "Fecha"
+	},
+	"settings": {
+		"userName": "Nombre",
+		"lastName": "Apellido",
+		"save": "Guardar cambios"
+	}
+}

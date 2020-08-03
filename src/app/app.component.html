@@ -1,0 +1,9 @@
+<div class="flex row">
+	<div class="flex column" *ngIf="showSideBar">
+		<app-menu [userRole]="userRole"></app-menu>
+	</div>
+	<div class="flex"
+		 [ngClass]="{'width-70': showSideBar, 'width-100': !showSideBar}">
+		<router-outlet></router-outlet>
+	</div>
+</div>

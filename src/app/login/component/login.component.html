@@ -1,0 +1,12 @@
+<div class="flex column">
+	<div class="flex row">
+		<img class="padding-30" src="assets/img/logo.png"/>
+	</div>
+	<div class="flex column login-panel" >
+		<input class="margin-15" type="text" [(ngModel)]="user.login" [formControl]="login"/>
+		<span class="margin-15 error-msg" *ngIf="!login.pristine && login.errors"> {{ 'login.user.required' | translate }} </span>
+		<input class="margin-15" type="password" [(ngModel)]="user.pass" [formControl]="pass"/>
+		<span class="margin-15 error-msg" *ngIf="!pass.pristine && pass.errors"> {{ 'login.pass.required' | translate }}</span>
+		<button class="margin-15" (click)="checkCredentials()"> {{ 'login.button' | translate }} </button>
+	</div>
+</div>

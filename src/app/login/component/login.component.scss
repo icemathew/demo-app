@@ -1,0 +1,10 @@
+@import "../../../scss/colors.scss";
+
+.error-msg {
+	color: $error-color;
+}
+
+.login-panel {
+	width: 300px;
+	padding: 0 100px;
+}

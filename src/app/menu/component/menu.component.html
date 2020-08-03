@@ -1,0 +1,10 @@
+<div class="flex column left-menu">
+	<div class="menu-button"(click)="goToUserSettings()"> {{ "home.menu.user.settings" | translate }} </div>
+	<!-- IS USER -->
+	<div *ngIf="roleUtil.isUser(userRole)" class="menu-button" (click)="goToInsurances()"> {{ "home.menu.new.report" | translate }}</div>
+	<!-- IS ADMIN -->
+	<div *ngIf="roleUtil.isAdmin(userRole)" class="menu-button" (click)="goToCheckReports()"> {{ "home.menu.check.reports" | translate }} </div>
+	<div class="padding-50">
+		<button (click)="logout()"> {{ "home.menu.logout" | translate }} </button>
+	</div>
+</div>

@@ -1,0 +1,11 @@
+<div class="flex column">
+	<div class="flex row">
+		<label class="margin-10" for="name"> {{ "settings.userName" | translate }}  </label>
+		<input class="margin-10" name="name" type="text" [(ngModel)]="userInfo.name"/>
+	</div>
+	<div class="flex row">
+		<label class="margin-10" for="lastName"> {{ "settings.lastName" | translate }}  </label>
+		<input class="margin-10" name="lastName" type="text" [(ngModel)]="userInfo.lastName"/>
+	</div>
+	<button (click)="changeUserSettings()">{{ "settings.save" | translate }} </button>
+</div>

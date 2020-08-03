@@ -1,0 +1,23 @@
+<div class="flex column align-center">
+	<div class="flex row align-start">
+		<div class="flex column margin-10">
+			<label class="margin-5" for="company"> {{ "insurance.company" | translate }}  </label>
+			<input class="flex margin-5" name="company" type="text" [(ngModel)]="insurance.company"/>
+		</div>
+		<div class="flex column align-start margin-10">
+			<label class="flex margin-5" for="plate"> {{ "insurance.plate" | translate }}  </label>
+			<input class="flex margin-5" name="plate" type="text" [(ngModel)]="insurance.plate"/>
+		</div>
+	</div>
+	<div class="flex row align-start">
+		<div class="flex column align-start margin-10">
+			<label class="flex margin-5" for="brand"> {{ "insurance.brand" | translate }}  </label>
+			<input class="flex margin-5" name="brand" type="text" [(ngModel)]="insurance.vehicleBrand"/>
+		</div>
+		<div class="flex column align-start margin-10">
+			<label class="flex margin-5" for="model"> {{ "insurance.model" | translate }}  </label>
+			<input class="flex margin-5" name="model" type="text" [(ngModel)]="insurance.vehicleModel"/>
+		</div>
+	</div>
+	<button class="flex row" (click)="createReport()">{{"insurance.create" | translate }}</button>
+</div>

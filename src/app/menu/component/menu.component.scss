@@ -1,0 +1,13 @@
+@import "../../../scss/colors.scss";
+
+.left-menu {
+	border-right: 1px solid black;
+	height: 100vh;
+	margin-right: 25px;
+}
+
+.menu-button {
+	cursor: pointer;
+	color: $menu-color;
+	padding: 15px;
+}

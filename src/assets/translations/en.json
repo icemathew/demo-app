@@ -1,0 +1,31 @@
+{
+	"login": {
+		"button": "LOGIN",
+		"user.required": "User is mandatory",
+		"pass.required": "Password is mandatory",
+		"error": "Credentials are incorrect"
+	},
+	"home": {
+		"menu": {
+			"user.settings": "User settings",
+			"new.report": "Create a report",
+			"check.reports": "Check reports",
+			"logout": "Logout"
+		},
+		"welcome": "Welcome {{ userName }} "
+	},
+	"insurance": {
+		"create": "Create a report",
+		"company": "Insurance company",
+		"brand": "Brand",
+		"model": "Model",
+		"plate": "Plate",
+		"user": "User",
+		"date": "Date"
+	},
+	"settings": {
+		"userName": "Name",
+		"lastName": "Last Name",
+		"save": "Save changes"
+	}
+}

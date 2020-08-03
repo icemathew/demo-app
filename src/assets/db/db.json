@@ -1,0 +1,47 @@
+{
+	"users": [
+		{
+			"id": 1,
+			"login": "Common",
+			"pass": "Ox1g3nt!",
+			"role": "USER",
+			"name": "Common",
+			"lastName": "User"
+		},
+		{
+			"id": 2,
+			"login": "Esteban",
+			"pass": "Ox1g3nt!",
+			"role": "USER",
+			"name": "Esteban",
+			"lastName": "Mateo"
+		},
+		{
+			"id": 3,
+			"login": "Ethan",
+			"pass": "Ox1g3nt!",
+			"role": "USER",
+			"name": "Ethan Nicolás",
+			"lastName": "Mateo"
+		},
+		{
+			"id": 4,
+			"login": "Admin",
+			"pass": "ADM1N1",
+			"role": "ADMIN",
+			"name": "Administrator",
+			"lastName": "-"
+		},
+		{
+			"id": 5,
+			"login": "guest",
+			"pass": "guest",
+			"role": "GUEST",
+			"name": "Guest",
+			"lastName": "-"
+		}
+	],
+	"token": "xz!uef6*=Sw3Snqt"
+	
+	
+}
