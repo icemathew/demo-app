@@ -7,20 +7,20 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./manager.component.scss']
 })
 export class ManageInsurancesComponent implements OnInit {
-    
-	columnDefs = [{headerName: this.translate.instant('insurance.company'), field: 'company' },
+
+    columnDefs = [{headerName: this.translate.instant('insurance.company'), field: 'company' },
         {headerName: this.translate.instant('insurance.plate'), field: 'plate' },
         {headerName: this.translate.instant('insurance.brand'), field: 'vehicleBrand'},
-		{headerName: this.translate.instant('insurance.model'), field: 'vehicleModel'}];
+        {headerName: this.translate.instant('insurance.model'), field: 'vehicleModel'}];
     rowData = [];
-	
+
   constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {
-	const userKeys = Object.keys(localStorage).filter((key) => key.indexOf('insurances-') !== -1);
-	userKeys.forEach(key => {
-		this.rowData.push(JSON.parse(localStorage.getItem(key)));
-	});
+    const userKeys = Object.keys(localStorage).filter((key) => key.indexOf('insurances-') !== -1);
+    userKeys.forEach(key => {
+        this.rowData.push(JSON.parse(localStorage.getItem(key)));
+    });
   }
 
 }

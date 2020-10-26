@@ -13,12 +13,12 @@ import { UserSettingsModule } from './user-settings/user-settings.module';
   declarations: [ HomeComponent ],
   exports: [ HomeComponent ],
   imports: [
-	FormsModule,
-	HomeRoutingModule,
-	InsuranceModule,
-	ManageInsurancesModule,
-	TranslateModule,
-	UserSettingsModule
+    FormsModule,
+    HomeRoutingModule,
+    InsuranceModule,
+    ManageInsurancesModule,
+    TranslateModule,
+    UserSettingsModule
   ],
   providers: [ HomeService ]
 })

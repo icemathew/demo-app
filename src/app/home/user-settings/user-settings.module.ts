@@ -8,8 +8,8 @@ import { UserSettingsService } from './service/user-settings.service';
 @NgModule({
   declarations: [ UserSettingsComponent ],
   imports: [
-	FormsModule,
-	TranslateModule
+    FormsModule,
+    TranslateModule
   ],
   providers: [ UserSettingsService ]
 })

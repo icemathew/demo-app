@@ -6,31 +6,31 @@ import { Router } from '@angular/router';
 })
 export class RouterService {
 
-  private static homeUrl = ['home', 'index'];
-  private static insuranceUrl = ['home', 'insurances'];
-  private static loginUrl = ['login'];
-  private static managerUrl = ['home', 'manager'];
-  private static settingsUrl = ['home', 'user-settings'];
+  static homeUrl = ['home', 'index'];
+  static insuranceUrl = ['home', 'insurances'];
+  static loginUrl = ['login'];
+  static managerUrl = ['home', 'manager'];
+  static settingsUrl = ['home', 'user-settings'];
 
   constructor(private router: Router) {}
-  
+
   goToHomePage(): void {
-	this.router.navigate(RouterService.homeUrl);
+    this.router.navigate(RouterService.homeUrl);
   }
-  
+
   goToInsurances(): void {
-	this.router.navigate(RouterService.insuranceUrl);
+    this.router.navigate(RouterService.insuranceUrl);
   }
-  
+
   goToLogin(): void {
-	this.router.navigate(RouterService.loginUrl);
+    this.router.navigate(RouterService.loginUrl);
   }
-  
+
   goToManager(): void {
-	this.router.navigate(RouterService.managerUrl);
+    this.router.navigate(RouterService.managerUrl);
   }
-  
+
   goToUserSettings(): void {
-	this.router.navigate(RouterService.settingsUrl);
+    this.router.navigate(RouterService.settingsUrl);
   }
 }

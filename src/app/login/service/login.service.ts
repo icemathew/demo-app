@@ -14,10 +14,10 @@ import { UserInfo } from '../../model/user-info.model';
 export class LoginService {
 
   constructor(private authService: AuthService,
-        private http: HttpClient,
-        private routerService: RouterService,
-		private toast: ToastrService,
-		private translate: TranslateService) { }
+            private http: HttpClient,
+            private routerService: RouterService,
+            private toast: ToastrService,
+            private translate: TranslateService) { }
 
   loginValidation(user: User): void {
    this.http.get<DataBase>('assets/db/db.json')
@@ -29,7 +29,7 @@ export class LoginService {
         this.authService.setTokenLocalStorage();
         this.routerService.goToHomePage();
       } else {
-		this.toast.error(this.translate.instant('login.error'));
+        this.toast.error(this.translate.instant('login.error'));
       }
     });
   }

@@ -11,8 +11,8 @@ export class HomeComponent implements OnInit {
   userName: string;
 
   constructor(private homeService: HomeService) { }
-  
+
   ngOnInit(): void {
-	this.userName = this.homeService.getUserName();
+    this.userName = this.homeService.getUserName();
   }
 }

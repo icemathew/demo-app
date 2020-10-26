@@ -13,10 +13,10 @@ export class InsuranceComponent implements OnInit {
   constructor(private insuranceService: InsuranceService) { }
 
   ngOnInit(): void {
-	this.insurance = Object.assign({}, InsuranceInitialState);
+    this.insurance = Object.assign({}, InsuranceInitialState);
   }
 
   createReport(): void {
-	this.insuranceService.createReport(this.insurance);
+    this.insuranceService.createReport(this.insurance);
   }
 }

@@ -13,18 +13,18 @@ export class UserSettingsComponent implements OnInit {
   userInfo: UserInfo;
 
   constructor(
-	private routerService: RouterService,
-	private userSettingsService: UserSettingsService
+    private routerService: RouterService,
+    private userSettingsService: UserSettingsService
   ) { }
 
   ngOnInit(): void {
-	this.userInfo = UserInfoInitialState;
-	this.userSettingsService.fillUserInfo(this.userInfo);
+    this.userInfo = UserInfoInitialState;
+    this.userSettingsService.fillUserInfo(this.userInfo);
   }
-  
+
   changeUserSettings(): void {
-	this.userSettingsService.saveSettings(this.userInfo);
-	this.routerService.goToHomePage();
+    this.userSettingsService.saveSettings(this.userInfo);
+    this.routerService.goToHomePage();
   }
 
 }

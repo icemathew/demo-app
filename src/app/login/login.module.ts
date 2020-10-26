@@ -11,11 +11,11 @@ import { LoginService } from './service/login.service';
   declarations: [ LoginComponent ],
   exports: [ LoginComponent ],
   imports: [
-	BrowserModule,
-	FormsModule,
-	HttpClientModule,
-	ReactiveFormsModule,
-	TranslateModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    TranslateModule
   ],
   providers: [ LoginService ]
 })

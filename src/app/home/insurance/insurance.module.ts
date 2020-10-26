@@ -8,9 +8,9 @@ import { InsuranceService } from './service/insurance.service';
 @NgModule({
   declarations: [ InsuranceComponent ],
   imports: [
-		FormsModule,
-		TranslateModule
-	],
+    FormsModule,
+    TranslateModule
+  ],
   providers: [ InsuranceService ]
 })
 export class InsuranceModule { }

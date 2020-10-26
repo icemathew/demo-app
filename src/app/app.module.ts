@@ -27,7 +27,7 @@ import { MenuModule } from './menu/menu.module';
     MenuModule,
     HttpClientModule,
     TranslateModule.forRoot(),
-	ToastrModule.forRoot({
+    ToastrModule.forRoot({
       positionClass: 'error-dialog',
       preventDuplicates: true
     })

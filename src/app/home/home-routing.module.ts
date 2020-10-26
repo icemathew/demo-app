@@ -6,8 +6,8 @@ import { InsuranceComponent } from './insurance/component/insurance.component';
 import { ManageInsurancesComponent } from './manager/component/manager.component';
 import { UserSettingsComponent } from './user-settings/component/user-settings.component';
 
-const routes: Routes = [ 
- 
+const routes: Routes = [
+
  { path: 'index', component: HomeComponent },
  { path: 'insurances', component: InsuranceComponent },
  { path: 'manager', component: ManageInsurancesComponent },

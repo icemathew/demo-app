@@ -10,7 +10,7 @@ import { ManageInsurancesComponent } from './component/manager.component';
   imports: [
     AgGridModule.withComponents([]),
     CommonModule,
-	TranslateModule
+    TranslateModule
   ]
 })
 export class ManageInsurancesModule { }

@@ -19,9 +19,9 @@ export class LoginComponent implements OnInit {
   constructor(private loginService: LoginService) { }
 
   ngOnInit(): void {
-	this.user = Object.assign({}, UserInitialState);
-	this.login = new FormControl(this.user.login, Validators.required);
-	this.pass = new FormControl(this.user.pass, Validators.required);
+    this.user = Object.assign({}, UserInitialState);
+    this.login = new FormControl(this.user.login, Validators.required);
+    this.pass = new FormControl(this.user.pass, Validators.required);
   }
 
   checkCredentials(): void {
